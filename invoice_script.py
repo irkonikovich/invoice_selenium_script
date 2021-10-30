@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
-import elements_2
+import invoice_page
 import time
 import calendar
 import os
@@ -14,7 +14,7 @@ import os
 # driver = webdriver.Chrome(PATH)
 
 driver = webdriver.Chrome(executable_path=os.popen('which chromedriver').read().strip())
-form_page = elements_2
+form_page = invoice_page
 wait = WebDriverWait(driver, 10)
 url = 'https://docs.google.com/forms/d/e/1FAIpQLSdiZ8JjRcmk49ehcimGXQY2ULaK7wPM5IwU4vWRsCw3M2EQvA/viewform'
 service_type_other = 'Other'
